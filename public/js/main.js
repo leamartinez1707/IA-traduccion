@@ -1,10 +1,12 @@
-let translateButton = document.querySelector("translate-button");
+let translateButton = document.querySelector("chat_button");
+
+console.log("Translate button:", translateButton);
 
 translateButton.addEventListener("click", async () => {
-  let inputText = document.querySelector("message-input");
+  let inputText = document.querySelector("chat_input");
   let messageInput = inputText.value.trim();
 
-  let languageSelect = document.querySelector("select-language");
+  let languageSelect = document.querySelector("chat_select");
 
   if (!messageInput.value || !languageSelect.value) {
     alert("Porfavor, escriba un texto a traducir y seleccione un idioma.");

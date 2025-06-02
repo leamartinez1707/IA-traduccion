@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/public/css/styles.css" />
 
-    <script src="/public/js/main.js" defer></script>
-    <title>IA Traducciones</title>
-  </head>
-  <body>
-    <h1>Traducciones en tiempo real con IA</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/IA-traduccion/public/css/styles.css" />
+  <script src="/public/js/main.js" defer></script>
+  <title>IA Traducciones</title>
+</head>
 
-    <div class="chat">
-      <div class="chat_messages"></div>
+<body>
+  <div class="chat_header">
+    <img src="./images/bot-chat.webp" alt="Imagen del logo del Chat " class="header_image">
+    <h1 class="header_title">Chat de traducciones</h1>
+  </div>
+  <section class="chat">
+    <div class="chat_messages">
+    </div>
+    <div class="chat_input-group">
 
-      <div class="chat_input-group">
-        <input
-          type="text"
-          placeholder="Ingresa el texto que deseas traducir"
-          id="message-input"
-          class="message-input"
-        />
+      <input type="text" id="inputText" class="chat_input" placeholder="Escribe tu mensaje aquí...">
+      <div class="chat_inputs">
 
-        <div class="chat_select">
-          <select name="select-language" id="select-language">
-            <option value=""></option>
-            <option value="español">Español</option>
-            <option value="ingles">Inglés</option>
-            <option value="fr">Francés</option>
-            <option value="de">Alemán</option>
-            <option value="it">Italiano</option>
-            <option value="pt">Portugués</option>
-            <option value="zh">Chino</option>
-            <option value="ja">Japonés</option>
-            <option value="ru">Ruso</option>
-            <option value="ar">Árabe</option>
-          </select>
-          <button class="translate-button">Traducir</button>
-        </div>
+        <select class="chat_select" name="targetLang" id="targetLang">
+          <option value="Español">Español</option>
+          <option value="Inglés">Inglés</option>
+          <option value="Francés">Francés</option>
+          <option value="Alemán">Alemán</option>
+          <option value="Italiano">Italiano</option>
+          <option value="Portugués">Portugués</option>
+          <option value="Ruso">Ruso</option>
+          <option value="Chino">Chino</option>
+          <option value="Japonés">Japonés</option>
+          <option value="Árabe">Árabe</option>
+        </select>
+        <button class="chat_button" id="translateButton">
+          Traducir
+        </button>
       </div>
     </div>
-  </body>
+  </section>
+
+
+</body>
+
 </html>
