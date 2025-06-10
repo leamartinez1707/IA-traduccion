@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/IA-traduccion/public/css/styles.css" />
-  <script src="/public/js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
   <title>IA Traducciones</title>
 </head>
 
@@ -19,10 +19,10 @@
     </div>
     <div class="chat_input-group">
 
-      <input type="text" id="inputText" class="chat_input" placeholder="Escribe tu mensaje aquí...">
+      <input maxlength="100" type="text" id="chat_input" class="chat_input" placeholder="Escribe tu mensaje aquí...">
       <div class="chat_inputs">
 
-        <select class="chat_select" name="targetLang" id="targetLang">
+        <select class="chat_select" name="targetLang" id="chat_select">
           <option value="Español">Español</option>
           <option value="Inglés">Inglés</option>
           <option value="Francés">Francés</option>
@@ -34,7 +34,7 @@
           <option value="Japonés">Japonés</option>
           <option value="Árabe">Árabe</option>
         </select>
-        <button class="chat_button" id="translateButton">
+        <button class="chat_button" id="chat_button">
           Traducir
         </button>
       </div>
